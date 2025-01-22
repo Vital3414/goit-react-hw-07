@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 20px 0;
+
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.item {
+  display: flex;
+  gap: 4px;
+  margin: 8px 8px;
+  width: auto;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  justify-content: space-between;
+}
