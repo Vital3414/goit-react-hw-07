@@ -1,5 +1,8 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,7 +17,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 400;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -26,12 +29,13 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Playwrite VN", serif;
   line-height: 1.5;
 }
 
@@ -43,6 +47,10 @@ h5,
 h6,
 p {
   margin: 0;
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 ul,
@@ -60,6 +68,10 @@ img {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 button {

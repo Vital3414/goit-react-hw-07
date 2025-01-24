@@ -1,9 +1,9 @@
 .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 4px;
   margin: 20px 0;
-
   border: 1px solid black;
   padding: 20px;
   border-radius: 8px;
@@ -12,6 +12,7 @@
 
 .item {
   display: flex;
+  justify-content: space-between;
   gap: 4px;
   margin: 8px 8px;
   width: auto;
@@ -20,4 +21,10 @@
   border-radius: 4px;
   font-size: 14px;
   justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

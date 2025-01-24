@@ -3,4 +3,16 @@
   flex-direction: column;
   column-gap: 8px;
   padding: 20px;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

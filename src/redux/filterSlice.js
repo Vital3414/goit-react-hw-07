@@ -2,6 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   name: "",
+  isLoading: false,
+  isError: false,
 };
 
 const filtersSlice = createSlice({
@@ -11,6 +13,15 @@ const filtersSlice = createSlice({
     changeFilter: (state, action) => {
       state.name = action.payload;
     },
+    // setLoading: (state, action) => {
+    //   state.isLoading = action.payload;
+    // },
+    // setError: (state, action) => {
+    //   state.isError = action.payload;
+    // },
+    // fetchDataSuccesses: (state, action) => {
+    //   state.filters = action.payload;
+    // },
   },
 });
 

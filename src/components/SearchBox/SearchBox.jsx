@@ -8,7 +8,7 @@ export default function SearchBox() {
     dispatch(changeFilter(event.target.value));
   };
   return (
-    <div>
+    <div className={css.container}>
       <p>Пошук за імʼям</p>
       <input
         className={css.list}
