@@ -1,21 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import Contact from "../Contact/Contact.jsx";
 import css from "./ContactList.module.css";
-import {
-  selectContacts,
-  selectIsError,
-  selectIsLoading,
-} from "../../redux/contactsSlice.js";
+import { selectIsError, selectIsLoading } from "../../redux/contactsSlice.js";
 import { selectNaneFilter } from "../../redux/filterSlice.js";
 import { useEffect } from "react";
 import { fetchContacts } from "../../redux/contactsOps.js";
+import { selectFilteredContacts } from "../../redux/contactsSlice.js";
 
 export default function ContactList() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  const contacts = useSelector(selectContacts);
+  const contacts = useSelector(selectFilteredContacts);
   const filter = useSelector(selectNaneFilter);
 
   const visibleContact = contacts.filter((contact) =>

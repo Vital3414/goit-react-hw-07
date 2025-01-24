@@ -13,15 +13,6 @@ const filtersSlice = createSlice({
     changeFilter: (state, action) => {
       state.name = action.payload;
     },
-    // setLoading: (state, action) => {
-    //   state.isLoading = action.payload;
-    // },
-    // setError: (state, action) => {
-    //   state.isError = action.payload;
-    // },
-    // fetchDataSuccesses: (state, action) => {
-    //   state.filters = action.payload;
-    // },
   },
 });
 
