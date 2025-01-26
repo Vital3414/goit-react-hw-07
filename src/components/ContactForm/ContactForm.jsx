@@ -3,7 +3,7 @@ import css from "./ContactForm.module.css";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
-import { addContactThunk } from "../../redux/contactsOps";
+import { addContact } from "../../redux/contactsOps";
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ export default function ContactForm() {
             name: values.name,
             number: values.number,
           };
-          dispatch(addContactThunk(onAdd));
+          dispatch(addContact(onAdd));
           options.resetForm();
         }}
       >

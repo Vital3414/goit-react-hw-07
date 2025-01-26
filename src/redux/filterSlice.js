@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   name: "",
-  isLoading: false,
-  isError: false,
+  loading: false,
+  error: false,
 };
 
 const filtersSlice = createSlice({
